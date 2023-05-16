@@ -1,16 +1,12 @@
-import './App.css';
-import Navbar from './components/Navbar/Navbar';
-
+// import './App.css';
+import Home from './components/Home/Home.jsx'
+// import About from './components/About/About.jsx';
 function App() {
   return (
-    <div className="h-screen">
-      
-        <Navbar />
-      
+    <div >
 
-      <div className='w-full h-5/6 bg-slate-400'>
-        <h1>world</h1>
-      </div>
+      <Home/>
+    
     </div>
     
   );
