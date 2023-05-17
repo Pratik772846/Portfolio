@@ -3,7 +3,13 @@ import Navbar from "../Navbar/Nav";
 const About = () => {
   return (
     <div>
-       <Navbar/>      
+       <Navbar/>    
+
+       
+
+        <div className='hidden sm:block'>small</div>
+         <div className='hidden lg:block '> large</div>
+        <div className='hidden md:block'>medium</div>
     </div>
   )
 }

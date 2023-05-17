@@ -17,7 +17,7 @@ const Nav = () => {
       <div className='md:flex items-center justify-between bg-slate-700 py-4 md:px-10 px-7'>
       <div className='font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
       text-gray-800'>
-        <span className='text-5xl text-violet-600 mr-1 pt-2'>
+        <span className='text-5xl text-orange-500 mr-1 pt-2'>
         <ion-icon name="skull"></ion-icon>
         </span>
         <span className='text-5xl font-bold text-white'>Pratik</span>
