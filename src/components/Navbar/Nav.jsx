@@ -20,7 +20,10 @@ const Nav = () => {
         <span className='text-5xl text-orange-500 mr-1 pt-2'>
         <ion-icon name="skull"></ion-icon>
         </span>
-        <span className='text-5xl font-bold text-white'>Pratik</span>
+        <span className='text-5xl font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text'>
+                Pratik
+        </span>
+        {/* <span className='text-5xl font-bold text-white'>Pratik</span> */}
         
         
         {/* <motion.div animate={{
