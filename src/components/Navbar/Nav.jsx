@@ -6,10 +6,10 @@ import React, { useState } from 'react'
 const Nav = () => {
     let Links =[
       {name:"HOME",link:"/"},
-      {name:"PROJETS",link:"/"},
-      {name:"ABOUT",link:"/"},
+      {name:"PROJETS",link:"/projects"},
+      {name:"ABOUT",link:"/about"},
       // {name:"EXP",link:"/"},
-      {name:"CONTACT",link:"/"},
+      {name:"CONTACT",link:"/contact"},
     ];
     let [open,setOpen]=useState(false);
   return (
