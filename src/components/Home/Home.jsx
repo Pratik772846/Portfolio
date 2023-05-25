@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from "../Navbar/Nav";
 // import {motion} from "framer-motion";
 import lc from "../../assets/leetcode.png";
-import useTypewriter from "react-typewriter-hook";
+// import useTypewriter from "react-typewriter-hook";
 import ik from "../../assets/Pratik.jpg";
 import resume from "../../assets/Pratik.pdf";
 
@@ -20,7 +20,7 @@ const Home = () => {
 
   const [magicName, setMagicName] = React.useState("Pratik Kumar.");
   const intervalRef = React.useRef({});
-  const name = useTypewriter(magicName);
+  // const name = useTypewriter(magicName);
   React.useEffect(
     () => {
       intervalRef.current = setInterval(() => {
@@ -51,7 +51,7 @@ const Home = () => {
           <div 
             className='  h-28 text-white font-bold text-5xl mt-5 pt-8'>
               <span className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text'>
-                {name}
+                Pratik Kumar
               </span>
           </div>
           <div 
