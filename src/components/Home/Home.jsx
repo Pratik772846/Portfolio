@@ -1,11 +1,10 @@
 import React from 'react'
 import Navbar from "../Navbar/Nav";
-import {motion} from "framer-motion";
+// import {motion} from "framer-motion";
 import lc from "../../assets/leetcode.png";
 import useTypewriter from "react-typewriter-hook";
 import ik from "../../assets/Pratik.jpg";
-// import { random } from "lodash";
-
+import resume from "../../assets/Pratik.pdf";
 
 const MagicOcean = [
   // "Yo, did you see that?",
@@ -40,16 +39,10 @@ const Home = () => {
     <div className='h-screen'>
       
       <Navbar />
-    
-      <div className="flex  justify-center  h-screen bg-slate-700  ">
-        <motion.div 
-          className="text-center  w-full md:w-2/3 lg:w-1/3 xl-1/3 h-2/3 bg-slate-900 rounded-lg flex flex-col justify-center items-center mt-24"
+      <div className="flex flex-col justify-center items-center gap-10  bg-slate-700  ">
+        <div 
+          className="text-center  w-full md:w-2/3 lg:w-1/3  h-2/3 bg-slate-900 rounded-lg flex flex-col justify-center items-center mt-24"
           >
-
-            {/* <img 
-              className='mt-5 w-1/5 h-32 rounded-full'
-             src="https://framerusercontent.com/images/b5HcLGiq8nXy29HRuyCjLcs90.svg" 
-              alt="Profile Img" /> */}
             <img 
             className='mt-5 w-1/5 h-40 rounded-full'
             src={ik}
@@ -61,7 +54,7 @@ const Home = () => {
                 {name}
               </span>
           </div>
-          <motion.div 
+          <div 
             className='bg-slate-900 h-14 mt-5 flex flex-row justify-center items-center space-x-4'
             >
                 <a href="https://github.com/Pratik772846" className='text-5xl text-orange-500'>
@@ -74,31 +67,28 @@ const Home = () => {
                   <img src={lc} alt="logo-leetcode" className=''/>
                 </a>
 
-          </motion.div>
-          <div className='text-white text-2xl font-bold h-36 mt-10 pt-10'>
-              {/* <span className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text'>
-                 Hi I'm Pratik , a creative web developer
-              </span> */}
-              Hi I'm Pratik , a creative web developer
-              
-              <br/>
-              {/* <span className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text'>
-                who loves to craft
-              </span> */}
-              who loves to craft
-                
-              <br/>
-              {/* <span className='bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text'>
-                  stunning websites.              
-              </span> */}
-                stunning websites. 
           </div>
-        </motion.div>
+          <div className='text-zinc-200 text-2xl font-bold h-36 mt-10 pt-10'>
+              Hi I'm Pratik , a creative web developer
+              <br/>
+              who loves to craft
+              <br/>
+              stunning websites. 
+          </div>
+        </div>
 
-        {/* <div className='flex flex-row justify-center bg-white' >
-          <span>Hire me</span>
-          <span>Resume</span>
-        </div> */}
+        <div className='flex flex-row justify-center justify-items-center gap-10 bg-slate-700 text-orange-400' >
+          {/* <span>Hire me</span> */}
+          <a href="/contact" className='text-5xl bg-slate-900 h-14 w-52  rounded-2xl pl-5 pt-1'> 
+            <span> Hire Me </span>          
+          </a>
+          <a href={resume} download className='text-5xl bg-slate-900 h-14 w-52  rounded-2xl pl-5 pt-1'>
+            <span>Resume</span>
+          </a>
+        </div>
+      </div>
+      <div className='bg-slate-700 h-20'>
+
       </div>
 
       

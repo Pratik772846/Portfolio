@@ -1,18 +1,20 @@
 import Navbar from "../Navbar/Nav";
-import React from 'react'
+import React from 'react';
 
 const Projects = () => {
   const projects = [
     {name:"Travel Advisor",link:"/"},
-    {name:"Travel Advisoryyssdy",link:"/"},
+    {name:"Travel Advisor",link:"/"},
     {name:"Travel Advisor",link:"/"},
   ];
   const minor=[
     {name:"Travel Advisor",link:"/"},
-    {name:"Travel Advisoryyssdy",link:"/"},
+    {name:"Travel Advisor",link:"/"},
     {name:"Travel Advisor",link:"/"},
   ];
+
   return (
+    
     <div className=" flex flex-col  ">
         
         <Navbar/>       
@@ -22,7 +24,7 @@ const Projects = () => {
 
           {projects.map((project)=>(
             <div className=" w-full md:w-2/3 lg:w-1/2  flex flex-col justify-center items-start pt-10 gap-4">
-              <span className="text-5xl text-white ">{project.name}</span>
+              <span className="text-5xl text-orange-400 ">{project.name}</span>
               <div className="flex flex-row justify-center gap-5 md:gap-5 lg:gap-10">
                   <span className=" bg-slate-900 text-md md:text-lg lg:text-lg text-zinc-300 w-1/2 pt-5 justify-center text-center rounded-2xl ">
                       Developed with React, Express, and Cheerio web scraping, 
@@ -32,29 +34,43 @@ const Projects = () => {
                   </span>
                   <div  className="bg-white w-1/2 h-72 rounded-2xl">kgk</div>
               </div>
-              <div className="flex flex-row justify-center items-center w-full gap-4 "> 
-                <a href="/">Repo</a>
-                <a href="/">Live</a>
+              <div className="flex flex-row justify-center items-center w-full gap-4 bg-slate-700"> 
+                <a href="/" className="text-orange-400 text-4xl">
+                  <ion-icon name='logo-github'></ion-icon>
+                </a>
+                <a href="/" className="text-orange-400 text-4xl">
+                  <ion-icon name='logo-github'></ion-icon>
+                </a>
               </div>
             </div>
           ))}
 
       <h1 className="text-5xl pt-5 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">MINOR PROJECTS</h1>
 
-      {minor.map((project)=>(
-            <div className=" w-full md:w-2/3 lg:w-1/2  flex flex-col justify-center items-start pt-10 gap-4">
-            <span className="text-5xl text-white ">{project.name}</span>
-            <div className="flex flex-row justify-center gap-5 md:gap-5 lg:gap-10">
-                <span className=" bg-slate-900 text-md md:text-lg lg:text-lg text-zinc-300 w-1/2 pt-5 justify-center text-center rounded-2xl ">
-                    Developed with React, Express, and Cheerio web scraping, 
-                    utilizes various APIs to offer extensive travel details and suggestions. 
-                    The combination of web scraping and API data ensures comprehensive information, 
-                    while React and Express provide a user-friendly interface with responsive design.
-                </span>
-                <div  className="bg-white w-1/2 h-72 rounded-2xl">kgk</div>
+      
+            <div className=" w-full md:w-2/3 lg:w-2/3  flex flex-col md:flex-col lg:flex-row justify-center items-center pt-10 gap-4">
+              
+              {minor.map((project)=>(
+                <div className="w-full md:w-full lg:w-1/3 text-center bg-slate-900 rounded-md">
+                  <span className="text-xl text-orange-400  ">{project.name}</span>
+                  <br></br>
+                  <span className="text-zinc-300 ">Developed with React, Express, and Cheerio web scraping, 
+                        utilizes various APIs to offer extensive travel details and suggestions.
+                        The combination of web scraping and API data ensures comprehensive information.
+                  </span>
+                  <br />
+                  <a href="/" className="text-orange-400 text-4xl">
+                    <ion-icon name="logo-github"></ion-icon>
+                  </a>
+                  <a href="/" className="text-orange-400 text-4xl">
+                    <ion-icon name="logo-github"></ion-icon>
+                  </a>
+                </div>
+              ))}
             </div>
-          </div>
-      ))}
+            <div className="h-14">
+
+            </div>
          
         </div>
     </div>
@@ -64,3 +80,13 @@ const Projects = () => {
 export default Projects
 
 
+
+
+
+// function Component() {
+//   
+  
+//   return (
+//     <motion.div  style={{ scaleX: scrollYProgress }}/>  
+//   )
+// }

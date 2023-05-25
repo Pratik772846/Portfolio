@@ -2,9 +2,13 @@ import React from 'react'
 import Navbar from "../Navbar/Nav";
 const Contact = () => {
   return (
-    <div>
+    <div className='flex flex-col items-center'>
         <Navbar/>
-        <h1>Contact</h1>
+        <div className='bg-slate-700 text-zinc-300 w-full h-full'>
+            jgkj
+            asui
+            ui
+        </div>
     </div>
   )
 }

@@ -10,38 +10,52 @@ const About = () => {
     {name:"NextJS"},
     {name:"Go"},
     {name:"Tailwind CSS"},
+   
   ];
   return (
     <div className='flex flex-col  bg-slate-700 items-center'>
        <Navbar/>    
-        <div className='flex flex-col items-center w-4/5 md:w-2/3 lg:w-1/3 bg-slate-700 gap-7 '>
-          <img src={ik} alt="Pratik's Img" className='h-60 w-52 rounded-full mt-5 '/>
-          <span className='text-5xl  text-orange-500 text-opacity-100'>Pratik Kumar</span>
+        <div className='flex flex-col items-center w-4/5 md:w-2/3 lg:w-2/3 bg-slate-700 gap-7 '>
+          <img src={ik} alt="Pratik's Img" className='h-60 w-52 rounded-full mt-5 shadow-2xl hover:scale-125 '/>
+          <span className='text-5xl  text-orange-500 text-opacity-100 '>Pratik Kumar</span>
 
           <div className='flex flex-col items-center text-xl text-zinc-300 '>
             <span>
-              Hi I'm Pratik , a creative web developer
-            </span>
-            <span>
-              Hi I'm Pratik , a creative web developer asdkljjhjkd
-            </span>
-            <span>
-              Hi I'm Pratik , a creative web developer
+              Developed with React, Express, and Cheerio web scraping, 
+              utilizes various APIs to offer extensive travel details and suggestions. 
+              The combination of web scraping and API data ensures comprehensive information, 
+              while React and Express provide a user-friendly interface with responsive design.
+              Developed with React, Express, and Cheerio web scraping, 
+              utilizes various APIs to offer extensive travel details and suggestions. 
+              The combination of web scraping and API data ensures comprehensive information, 
+              while React and Express provide a user-friendly interface with responsive design.
+              Developed with React, Express, and Cheerio web scraping, 
+              utilizes various APIs to offer extensive travel details and suggestions. 
+              The combination of web scraping and API data ensures comprehensive information, 
+              while React and Express provide a user-friendly interface with responsive design.
+              Developed with React, Express, and Cheerio web scraping, 
+              utilizes various APIs to offer extensive travel details and suggestions. 
+              The combination of web scraping and API data ensures comprehensive information, 
+              while React and Express provide a user-friendly interface with responsive design.
             </span>
           </div>
 
-          <span className='text-4xl text-orange-500'>TECHNOLOGY</span>
+          <span className='text-4xl text-orange-500 text-center'>
+            TECHNOLOGY I'M WORKING ON
+          </span>
           
-          <div className='flex flex-col items-center gap-5'>
+          <div className='flex flex-row md:flex-row lg:flex-row 
+            flex-wrap md:flex-wrap lg:flex-wrap justify-center items-center gap-5'>
               {tech.map((tech)=>(
-                <div className='flex flex-row items-center gap-0 md:gap-3 lg:gap-9'>
-                    <span className='text-2xl'>
-                      <ion-icon name='logo-github'></ion-icon>
-                    </span>
-                    <span className='text-2xl text-zinc-300'>{tech.name}</span>
-                </div> 
+                <div className='text-4xl bg-slate-900 h-32 w-32  text-orange-400 rounded-lg shadow-2xl shadow-orange-200/20'>
+                  <ion-icon name='logo-github'></ion-icon>
+                </div>
                 
               ))}
+          </div>
+
+          <div className='h-20'>
+
           </div>
 
         </div>
