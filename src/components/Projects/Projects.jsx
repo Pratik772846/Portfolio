@@ -1,6 +1,6 @@
 import Navbar from "../Navbar/Nav";
 import React from 'react';
-
+import Projectimg1 from "../../assets/img.png";
 const Projects = () => {
   const projects = [
     {name:"Travel Advisor",link:"/"},
@@ -26,20 +26,22 @@ const Projects = () => {
             <div className=" w-full md:w-2/3 lg:w-1/2  flex flex-col justify-center items-start pt-10 gap-4">
               <span className="text-5xl text-orange-400 ">{project.name}</span>
               <div className="flex flex-row justify-center gap-5 md:gap-5 lg:gap-10">
-                  <span className=" bg-slate-900 text-md md:text-lg lg:text-lg text-zinc-300 w-1/2 pt-5 justify-center text-center rounded-2xl ">
+                  <span className=" bg-slate-900 text-lg md:text-xl lg:text-xl text-zinc-300 w-1/2 pt-5 justify-center text-center rounded-2xl ">
                       Developed with React, Express, and Cheerio web scraping, 
                       utilizes various APIs to offer extensive travel details and suggestions. 
                       The combination of web scraping and API data ensures comprehensive information, 
                       while React and Express provide a user-friendly interface with responsive design.
                   </span>
-                  <div  className="bg-white w-1/2 h-72 rounded-2xl">kgk</div>
+                  <div  className="bg-slate-700 w-1/2  items-center rounded-2xl">
+                    <img src={Projectimg1} alt="Project Img" className="h-96 md:h-80 lg:h-96 md:w-80 lg:w-96 items-center" />
+                  </div>
               </div>
               <div className="flex flex-row justify-center items-center w-full gap-4 bg-slate-700"> 
                 <a href="/" className="text-orange-400 text-4xl">
                   <ion-icon name='logo-github'></ion-icon>
                 </a>
                 <a href="/" className="text-orange-400 text-4xl">
-                  <ion-icon name='logo-github'></ion-icon>
+                  <ion-icon name="desktop-outline"></ion-icon>
                 </a>
               </div>
             </div>
