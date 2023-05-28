@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import "./Nav.css";
 // import {motion} from "framer-motion";
 // import { Link } from 'react-router-dom'
 
@@ -15,24 +16,13 @@ const Nav = () => {
   return (
     <div className=' w-full sticky top-0 left-0 '>
       <div className='md:flex items-center justify-between bg-slate-700 py-4 md:px-10 px-7'>
-      <div className='font-bold text-2xl cursor-pointer flex items-center font-[Poppins] 
-      text-gray-800'>
+      <div className=' text-2xl cursor-pointer flex items-center '>
         <span className='text-5xl text-orange-500 mr-1 pt-2'>
         <ion-icon name="skull"></ion-icon>
         </span>
-        <span className='text-5xl font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text'>
+        <span className='name text-5xl text-white'>
                 Pratik
-        </span>
-        {/* <span className='text-5xl font-bold text-white'>Pratik</span> */}
-        
-        
-        {/* <motion.div animate={{
-            scale: [1, 1, 1, 1, 1],
-            rotate: [0, 0, 270, 270, 0],
-            borderRadius: ["20%", "20%", "50%", "50%", "20%"],
-        }}>
-          Pratik
-        </motion.div> */}
+        </span> 
       </div>
       
       <div onClick={()=>setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>

@@ -20,11 +20,11 @@ const Projects = () => {
         <Navbar/>       
   
         <div className="flex flex-col flex-grow justify-center items-center bg-slate-700 ">
-          <h1 className="text-5xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-transparent bg-clip-text">PROJECTS</h1>
+          <h1 className="text-5xl bg-gradient-to-r from-color1  to-color2 text-transparent bg-clip-text font-sans">PROJECTS</h1>
 
           {projects.map((project)=>(
             <div className=" w-full md:w-2/3 lg:w-1/2  flex flex-col justify-center items-start pt-10 gap-4">
-              <span className="text-5xl text-orange-400 ">{project.name}</span>
+              <span className="text-5xl text-orange-300 ">{project.name}</span>
               <div className="flex flex-row justify-center gap-5 md:gap-5 lg:gap-10">
                   <span className=" bg-slate-900 text-lg md:text-xl lg:text-xl text-zinc-300 w-1/2 pt-5 justify-center text-center rounded-2xl ">
                       Developed with React, Express, and Cheerio web scraping, 

@@ -30,6 +30,9 @@ const Contact = () => {
             </div>
             </div>
         </div>
+        <div className='bg-slate-700 w-full h-10'>
+
+        </div>
     </div>
   )
 }
