@@ -2,10 +2,10 @@ import React from 'react'
 import Navbar from "../Navbar/Nav";
 const Contact = () => {
   return (
-    <div className='flex flex-col items-center'>
+    <div className='flex flex-col bg-slate-700 items-center'>
         <Navbar/>
-        <div className=' text-zinc-300 w-full h-full'>
-        <div name = 'contact' className='relative flex flex-col text-center  mx-auto    sm:bg-[#f6f5f5]'>
+        <div className=' text-zinc-300 bg-slate-700 w-full h-full'>
+            <div className='flex flex-col text-center  mx-auto'>
             <div className='flex flex-col p-4 pt-8 md:w-[40%] justify-center max-w-screen mx-auto h-full'>
                 <div className='pb-8 mt-8'>
                   <h3 className='uppercase text-orange-500 text-5xl tracking-[20px] mt-6'>Contact </h3>
@@ -26,8 +26,9 @@ const Contact = () => {
 
                   </form>
               </div>
+
             </div>
-         </div>
+            </div>
         </div>
     </div>
   )
@@ -35,13 +36,3 @@ const Contact = () => {
 
 export default Contact
 
-
-// import React from 'react'
-
-// const Contact = () => {
-//   return (
-    
-//   )
-// }
-
-// export default Contact
