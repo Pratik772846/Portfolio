@@ -1,16 +1,10 @@
 import React from 'react'
 import Navbar from "../Navbar/Nav";
 import "./Home.css";
-// import {motion} from "framer-motion";
-import lc from "../../assets/lc.png";
-// import useTypewriter from "react-typewriter-hook";
 import ik from "../../assets/Pratik.jpg";
 import resume from "../../assets/Pratik.pdf";
 
 const MagicOcean = [
-  // "Yo, did you see that?",
-  // "Fine, I' ll show you again.",
-  // "事不过三，bye."
   "Pratik Kumar.",
   "Pratik Kumar.",
   "Pratik Kumar."
@@ -66,7 +60,6 @@ const Home = () => {
           </div>
 
           <div className='flex flex-row justify-center justify-items-center gap-10  text-white pt-8' >
-              {/* <span>Hire me</span> */}
               <a href="/contact" className=' text-center text-3xl md:text-3xl lg:text-3xl bg-gradient-to-r from-color1  to-color2  h-14 w-48 md:w-52 lg:w-52 rounded p-1 '> 
                   <div className='h-full w-full bg-slate-900 pt-1'>
                     Hire Me         
@@ -88,7 +81,7 @@ const Home = () => {
                 <ion-icon name='logo-linkedin'></ion-icon>
               </a>
               <a href="https://leetcode.com/__ragnar" className='text-5xl w-10 text-slate-900 '>
-                <img src={lc} alt="logo-leetcode" className='rounded'/>
+                <img src="https://res.cloudinary.com/dv8zwrzop/image/upload/v1685335803/lc_nua2lq.png" alt="logo-leetcode" className='rounded'/>
               </a>
 
           </div>
