@@ -1,9 +1,8 @@
 import React from 'react'
-import Navbar from "../Navbar/Nav";
 const Contact = () => {
   return (
     <div className='flex flex-col bg-slate-700 items-center'>
-        <Navbar/>
+        {/* <Navbar/> */}
         <div className=' text-zinc-300 bg-slate-700 w-full h-full'>
             <div className='flex flex-col text-center  mx-auto'>
             <div className='flex flex-col p-4 pt-8 md:w-[40%] justify-center max-w-screen mx-auto h-full'>

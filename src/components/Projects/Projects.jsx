@@ -1,6 +1,5 @@
-import Navbar from "../Navbar/Nav";
 import React from 'react';
-import Projectimg1 from "../../assets/img.png";
+import Projectimg1 from "../../assets/prj-img.png";
 const Projects = () => {
   const projects = [
     {name:"Travel Advisor",link:"/"},
@@ -17,7 +16,7 @@ const Projects = () => {
     
     <div className=" flex flex-col  ">
         
-        <Navbar/>       
+        {/* <Navbar/>        */}
   
         <div className="flex flex-col flex-grow justify-center items-center bg-slate-700 ">
           <h1 className="text-5xl bg-gradient-to-r from-color1  to-color2 text-transparent bg-clip-text font-sans">PROJECTS</h1>
@@ -32,7 +31,7 @@ const Projects = () => {
                       The combination of web scraping and API data ensures comprehensive information, 
                       while React and Express provide a user-friendly interface with responsive design.
                   </span>
-                  <div  className="bg-slate-700 w-1/2  items-center rounded-2xl">
+                  <div  className="bg-slate-700 w-1/2 flex justify-around items-center rounded-2xl">
                     <img src={Projectimg1} alt="Project Img" className="h-96 md:h-80 lg:h-96 md:w-80 lg:w-96 items-center" />
                   </div>
               </div>
